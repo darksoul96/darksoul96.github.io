@@ -98,6 +98,7 @@ function App() {
 
   return (
     <>
+    
       <nav id="navigation-buttons">
         <div id="navigation-welcome" className="navigation-icon" onClick={ navWelcomeClick }></div>
         <div id="navigation-about" className="navigation-icon" onClick={ navAboutClick } ></div>
