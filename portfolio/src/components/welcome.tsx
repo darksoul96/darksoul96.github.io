@@ -1,17 +1,19 @@
 import { useEffect } from "react";
 import "./welcome.css"
 
-
-interface WelcomeProps {
-    goToAbout: () => void;
-}
-
-export default function Welcome({ goToAbout }: WelcomeProps) {
+export default function Welcome() {
 
     return (
         <section className="welcome">
-            <h1>Welcome</h1>
-            <button onClick={goToAbout}>Go to About</button>
+            <div id="welcome-content">
+                <div id="hero-text">
+                    <h1>Hi,</h1>
+                    <h1>my name</h1>
+                    <h1>is Agustin</h1>
+                </div>
+            </div>
+              
+            
         </section>
     )
 }

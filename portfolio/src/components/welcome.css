@@ -1,5 +1,8 @@
+#welcome-content {
+    max-width: 1760px;
+}
 
+.welcome{
+    display: flex;
 
-.welcome {
-    min-height: 100vh;
 }
