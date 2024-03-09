@@ -1,0 +1,16 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation-buttons {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.navigation-icon {
+  border: 1px solid white;
+  padding: 8px;
+  margin-bottom: 15px;
+}
