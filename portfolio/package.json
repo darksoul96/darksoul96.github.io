@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://darksoul96.github.io/portfolio",
+  "homepage": "https://darksoul96.github.io/",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d dist",
