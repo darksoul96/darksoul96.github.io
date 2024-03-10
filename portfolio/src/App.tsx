@@ -2,7 +2,7 @@
 import './App.css'
 import Welcome from './components/welcome'
 import About from './components/about'
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Skills from './components/skills';
 import Technologies from './components/technologies';
 import Contact from './components/contact';
@@ -73,40 +73,75 @@ function App() {
     setCurrentPage(4)
   }
 
-  
-  
-  function goToNext() {
-    switch(currentPage) {
-      case 0:
-        handleGoToAbout();
-        setCurrentPage(currentPage + 1);
-        break;
-      case 1:
-        handleGoToSkills();
-        setCurrentPage(currentPage + 1);
-        break;
-      case 2:
-        handleGoToTechnologies();
-        setCurrentPage(currentPage + 1);
-        break;
-      case 3:
-        handleGoToContact();
-        setCurrentPage(currentPage + 1);
-        break;
-    }
-  }
+
+  useEffect(() => {
+    const handleScroll = (event: any) => {
+      event.preventDefault();
+      let success = false;
+      new Promise<boolean>((resolve, reject) => {
+        if (event.deltaY > 0) {
+          success = true;
+          if (currentPage == 0) {
+            handleGoToAbout();
+            setCurrentPage(currentPage + 1);
+          } else if (currentPage == 1) {
+            handleGoToSkills();
+            setCurrentPage(currentPage + 1);
+          } else if (currentPage == 2) {
+            handleGoToTechnologies();
+            setCurrentPage(currentPage + 1);
+          } else if (currentPage == 3) {
+            handleGoToContact();
+            setCurrentPage(currentPage + 1);
+          }
+        } else {
+          success = true;
+          if (currentPage == 1) {
+            handleGoToWelcome();
+            setCurrentPage(currentPage - 1);
+          } else if (currentPage == 2) {
+            handleGoToAbout();
+            setCurrentPage(currentPage - 1);
+          } else if (currentPage == 3) {
+            handleGoToSkills();
+            setCurrentPage(currentPage - 1);
+          } else if (currentPage == 4) {
+            handleGoToTechnologies();
+            setCurrentPage(currentPage - 1);
+          }
+        }
+
+        resolve(success);
+        reject(!success);
+      }).then(() => {
+        setTimeout(() => {
+
+        }, 1000);
+      });
+
+      
+      
+
+    };
+
+    window.addEventListener('wheel', handleScroll);
+
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  });
+
 
   return (
-    <>
-    
+    <div >
       <nav id="navigation-buttons">
-        <div id="navigation-welcome" className="navigation-icon" onClick={ navWelcomeClick }></div>
-        <div id="navigation-about" className="navigation-icon" onClick={ navAboutClick } ></div>
-        <div id="navigation-skills" className="navigation-icon" onClick={ navSkillsClick }></div>
-        <div id="navigation-technologies" className="navigation-icon" onClick={ navTechnologiesClick }></div>
-        <div id="navigation-contact" className="navigation-icon" onClick={ navContactClick }></div>
+        <div id="navigation-welcome" className={ currentPage == 0 ? "current-nav navigation-icon" : "navigation-icon"}  onClick={ navWelcomeClick }></div>
+        <div id="navigation-about" className={ currentPage == 1 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navAboutClick } ></div>
+        <div id="navigation-skills" className={ currentPage == 2 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navSkillsClick }></div>
+        <div id="navigation-technologies" className={ currentPage == 3 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navTechnologiesClick }></div>
+        <div id="navigation-contact" className={ currentPage == 4 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navContactClick }></div>
       </nav>
-      <div ref={welcomeRef} className="navigation-page">
+      <div ref={welcomeRef} className="navigation-page" >
         <Welcome></Welcome>
       </div>
       
@@ -125,11 +160,11 @@ function App() {
       <div ref={contactRef} className="navigation-page">
         <Contact></Contact>
       </div>
-
-      <button onClick={ function() { goToNext()} } className="goToNext"><FontAwesomeIcon icon={faArrowDown} size="lg" /></button>
       
-    </>
+    </div>
   )
 }
 
 export default App
+
+
