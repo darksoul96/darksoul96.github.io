@@ -1,6 +1,11 @@
+
 #root {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
 }
 
 #navigation-buttons {
@@ -11,9 +16,8 @@
 
 .navigation-icon {
   border: 1px solid white;
-  padding: 8px;
+  padding: 6px;
   margin-bottom: 25px;
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
   opacity: 70%;
 }
@@ -25,25 +29,35 @@
 
 .navigation-page {
   min-height: 100vh;
+  min-width: 60vw;
 }
 
-.goToNext {
-  position: fixed;
-  bottom: 3%;
-  left: 48.5%;
-  right: 48.5%;
-  transform: translateX(-50%, -50%);
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  opacity: 50%;
+#nav-page-welcome {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
-.goToNext > .fa-arrow-down {
-  font-size: 28px;
+
+#nav-page-about {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .current-nav {
   transform: rotate(45deg);
   background-color: white;
+}
+
+.cursor {
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 50%;
 }

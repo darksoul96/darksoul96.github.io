@@ -6,8 +6,12 @@ import { useEffect, useRef, useState } from 'react';
 import Skills from './components/skills';
 import Technologies from './components/technologies';
 import Contact from './components/contact';
+import { motion } from 'framer-motion';
+
 function App() {
 
+
+  
   const welcomeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -117,21 +121,55 @@ function App() {
         }, 1000);
       });
 
-      
-      
-
     };
-
     window.addEventListener('wheel', handleScroll);
-
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
   });
 
 
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0
+  });
+
+
+  useEffect(() => {
+    const mouseMove = (e: any) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      }); 
+    }
+    window.addEventListener("mousemove", mouseMove);
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, []);
+
+  const [cursorVariant, setCursorVariant] = useState("default");
+  const variantList = {
+    default: {
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10
+    },
+    text: {
+      x: mousePosition.x - 25,
+      y: mousePosition.y - 25,
+      height: 50,
+      width: 50,
+      transition: { duration: 0.2 },
+      mixBlaendMode: "difference"
+    }
+  };
+
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
+
   return (
-    <div >
+    <div>
+      <motion.div className='cursor' variants={variantList} animate={cursorVariant} initial="default"></motion.div>
       <nav id="navigation-buttons">
         <div id="navigation-welcome" className={ currentPage == 0 ? "current-nav navigation-icon" : "navigation-icon"}  onClick={ navWelcomeClick }></div>
         <div id="navigation-about" className={ currentPage == 1 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navAboutClick } ></div>
@@ -139,24 +177,35 @@ function App() {
         <div id="navigation-technologies" className={ currentPage == 3 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navTechnologiesClick }></div>
         <div id="navigation-contact" className={ currentPage == 4 ? "current-nav navigation-icon" : "navigation-icon"} onClick={ navContactClick }></div>
       </nav>
-      <div ref={welcomeRef} className="navigation-page" >
-        <Welcome></Welcome>
+      <div ref={welcomeRef} className="navigation-page" id="nav-page-welcome">
+        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Welcome></Welcome>
+        </div>
+        
       </div>
       
-      <div ref={aboutRef} className="navigation-page">
-        <About ></About>
+      <div ref={aboutRef} className="navigation-page" id="nav-page-about">
+        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <About ></About>
+        </div>
       </div>
 
       <div ref={skillsRef} className="navigation-page">
-        <Skills></Skills>
+        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Skills></Skills>
+        </div> 
       </div>
 
       <div ref={technologiesRef} className="navigation-page">
-        <Technologies></Technologies>
+        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Technologies></Technologies>
+        </div>
       </div>
 
       <div ref={contactRef} className="navigation-page">
-        <Contact></Contact>
+        <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Contact></Contact>
+        </div>
       </div>
       
     </div>

@@ -1,8 +1,28 @@
-#welcome-content {
-    max-width: 1760px;
-}
+
+
 
 .welcome{
-    display: flex;
-
+    padding: 50px;
+    width: 60vw;
+    height: 60vh;
+    margin-bottom: 260px;
 }
+
+#welcome-content {
+    
+}
+
+#hero-text{
+    font-size: 4.5rem;
+}
+
+#hero-text > h1 {
+    white-space: pre-wrap;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
