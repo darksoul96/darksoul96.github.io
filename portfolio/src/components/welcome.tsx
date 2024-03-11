@@ -11,7 +11,7 @@ export default function Welcome() {
             <div id="welcome-content">
                 <div id="hero-text">
                     <h1>
-                        Hi, <br />my name <br />is Agustín
+                        Hi, <br />my name <br />is Agustín: $
                     </h1>
                     
                 </div>

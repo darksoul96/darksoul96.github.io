@@ -15,7 +15,7 @@
 }
 
 .navigation-icon {
-  border: 1px solid white;
+  border: 1px solid #33FF00;
   padding: 6px;
   margin-bottom: 25px;
   transition: all 0.5s ease-in-out;
@@ -23,7 +23,7 @@
 }
 
 .navigation-icon:hover {
-  background-color: white;
+  background-color: #33FF00;
   
 }
 
@@ -47,7 +47,7 @@
 
 .current-nav {
   transform: rotate(45deg);
-  background-color: white;
+  background-color: #33FF00;
 }
 
 .cursor {

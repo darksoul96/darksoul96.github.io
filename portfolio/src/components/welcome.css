@@ -1,6 +1,4 @@
 
-
-
 .welcome{
     padding: 50px;
     width: 60vw;
@@ -18,11 +16,31 @@
 
 #hero-text > h1 {
     white-space: pre-wrap;
-    color: white;
+    color: #33FF00;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
+#hero-text > h1::after {
+    display: inline;
+    margin-left: 2.5rem;
+    content: " ";
+    border: 2px solid #33FF00;
+    width: 30px;
+    height: 30px;
+    background-color: #33FF00;
+    animation: 0.5s inputBoxAnimation infinite alternate; 
+}
 
+
+@keyframes inputBoxAnimation {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
