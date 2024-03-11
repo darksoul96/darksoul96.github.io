@@ -1,0 +1,56 @@
+.skills {
+    /*display: grid;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+     border: 2px solid;
+    border-color: rgba(0, 0, 0, 1); 
+    border-radius: 20px;
+    width: 60vw;
+    height: 60vh;
+    min-height: 600px;
+    font-family: "Source Code Pro", monospace;
+     box-shadow: 5px 5px 15px; 
+    background-color: #0d0d0d;*/
+    width: 1152px;
+    height: 600px;
+    min-height: 600px;
+    font-family: "Source Code Pro", monospace;
+    
+    
+}
+
+.skills > h1 {
+    text-align: center;
+    color: #33FF00;
+}
+
+/* .skill-element {
+    width: 300px;
+    max-width: 300px;
+    border: 1px solid white;
+    border-radius: 20px;
+} */
+
+.skills-cards {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 15px;
+}
+
+.MuiCardContent-root > div {
+    transition: ease-in 0.5s;
+}
+
+.MuiCardContent-root > svg {
+    transition: ease-in 0.5s;
+}
+
+.MuiCardContent-root:hover > div  {
+    color: #33FF00;
+}
+
+.MuiCardContent-root:hover > svg {
+    color: #33FF00;
+}

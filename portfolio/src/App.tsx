@@ -9,8 +9,6 @@ import Contact from './components/contact';
 import { motion } from 'framer-motion';
 
 function App() {
-
-
   
   const welcomeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -128,12 +126,10 @@ function App() {
     };
   });
 
-
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
   });
-
 
   useEffect(() => {
     const mouseMove = (e: any) => {
@@ -181,7 +177,6 @@ function App() {
         <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <Welcome></Welcome>
         </div>
-        
       </div>
       
       <div ref={aboutRef} className="navigation-page" id="nav-page-about">
@@ -190,7 +185,7 @@ function App() {
         </div>
       </div>
 
-      <div ref={skillsRef} className="navigation-page">
+      <div ref={skillsRef} className="navigation-page" id="nav-page-skills">
         <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <Skills></Skills>
         </div> 

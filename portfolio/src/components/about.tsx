@@ -20,6 +20,8 @@ as React, Angular, and Flutter, as well as desktop applications developed in C++
 This diverse experience has strengthened my
 problem-solving abilities and my commitment to delivering innovative solutions.
             </p>
+            <br />
+            <a id="resume-link" href="https://1drv.ms/b/s!Asw_2YTjYXyQi9U78-5O4vo8tajxJw?e=VZvNaI" target="_blank">My resume</a>
         </section>
     )
 }

@@ -1,22 +1,35 @@
 .about{
-    padding: 50px;
-    border: 1px solid;
-    border-color: rgba(255,255,255,0.5);
-    border-radius: 20px;
-    width: 60vw;
-    height: 60vh;
-    min-height: 580px;
+    /* padding: 50px;
+    border: 2px solid;
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 20px; */
+    width: 1152px;
+    height: 600px;
+    min-height: 600px;
     font-family: "Source Code Pro", monospace;
-    box-shadow: 5px 5px 15px;
-    background-color: #0d0d0d;
+    /* box-shadow: 5px 5px 15px;
+    background-color: #0d0d0d; */
 }
 
 .about > h1 {
     color: #33FF00;
+    text-align: center;
 }
 
 .about > p {
     padding-left: 23px;
     padding-right: 23px;
     text-align: justify;
+}
+
+#resume-link {
+    text-decoration: none;
+    float: right;
+    color: #33FF00;
+    font-family: "Source Code Pro", monospace;
+}
+
+#resume-link:hover {
+    text-decoration: underline;
+    color: #33ff00ab;
 }
