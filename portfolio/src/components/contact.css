@@ -1,0 +1,38 @@
+.contact{
+    /* padding: 50px;
+    border: 2px solid;
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 20px; */
+    width: 1152px;
+    height: 600px;
+    min-height: 600px;
+    font-family: "Source Code Pro", monospace;
+    /* box-shadow: 5px 5px 15px;
+    background-color: #0d0d0d; */
+}
+
+.contact > h1 {
+    color: #33FF00;
+    text-align: center;
+}
+
+#whatsapp-logo {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#socials {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.socialIcon {
+    margin: 50px;
+    width: 200px;
+    filter: drop-shadow(0 0 5px #000) drop-shadow(0 0 10px #000) drop-shadow(0 0 20px #000);
+}

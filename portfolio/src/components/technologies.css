@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 .technologies {
     width: 1152px;
     height: 600px;
@@ -16,17 +19,29 @@
 }
 
 .technologies-carousel {
+    margin: auto;
     margin-top: 200px;
     display: flex;
     justify-content: center;
     align-content: center;
+    /* width: 32%;
+    overflow: hidden; */
 }
 
-.carousel-element {
+/* .carousel-element {
     width: 200px;
     height: 200px;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.slick-list {
+    margin: auto;
+    width: 70%;
+}
+
+.slider-container {
+    margin-top: 200px;
 }

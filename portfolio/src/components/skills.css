@@ -41,12 +41,12 @@
 }
 
 .MuiCardContent-root:hover > div  {
-    font-size: 130%;
+    font-size: 126%;
     color: #33FF00;
 }
 
 .MuiCardContent-root:hover > svg {
     color: #33FF00;
-    font-size: 4.5rem;
+    font-size: 4.1rem;
 }
 
