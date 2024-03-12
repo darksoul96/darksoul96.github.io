@@ -8,7 +8,7 @@ import typescriptLogo from '../assets/svg-files/typescriptlang-icon.svg';
 import springLogo from '../assets/svg-files/springio-icon.svg';
 import nodejsLogo from '../assets/svg-files/nodejs-icon.svg';
 import flutterLogo from '../assets/svg-files/flutterio-icon.svg';
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 
 
