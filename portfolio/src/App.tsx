@@ -191,13 +191,13 @@ function App() {
         </div> 
       </div>
 
-      <div ref={technologiesRef} className="navigation-page">
+      <div ref={technologiesRef} className="navigation-page" id="nav-page-technologies">
         <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <Technologies></Technologies>
         </div>
       </div>
 
-      <div ref={contactRef} className="navigation-page">
+      <div ref={contactRef} className="navigation-page" id="nav-page-contact">
         <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <Contact></Contact>
         </div>

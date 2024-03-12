@@ -14,10 +14,10 @@ export default function Skills() {
     const cardProblemSolving = (
         <React.Fragment>
           <CardContent id="card-content-problem" sx={{ color: 'rgba(255, 255, 255, 0.6)', display: 'flex', alignItems: 'center', flexWrap: 'wrap', flexDirection: 'column', justifyContent: 'center', paddingTop: '90px', paddingBottom: '100px' }}>
-            <Typography variant="h5" component="div" sx={{ mb: 1.5, textAlign: 'center', }}>
+            <Typography variant="h6" component="div" sx={{ mb: 1.5, textAlign: 'center', }}>
                 Problem-Solving
             </Typography>  
-            <BugReportIcon sx={{  fontSize: '5rem' }}/>
+            <BugReportIcon sx={{  fontSize: '4rem' }}/>
           </CardContent>
         </React.Fragment>
       );
@@ -25,10 +25,10 @@ export default function Skills() {
       const cardTeamwork = (
         <React.Fragment>
           <CardContent id="card-content-teamwork" sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', flexDirection: 'column', paddingTop: '90px', paddingBottom: '100px' }}>
-            <Typography variant="h5" component="div" sx={{ mb: 1.5, textAlign: 'center', color: 'rgba(255, 255, 255, 0.6)' }}>
+            <Typography variant="h6" component="div" sx={{ mb: 1.5, textAlign: 'center', color: 'rgba(255, 255, 255, 0.6)' }}>
               Teamwork
             </Typography>
-            <GroupsIcon sx={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '5rem' }}/>
+            <GroupsIcon sx={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '4rem' }}/>
           </CardContent>
           
         </React.Fragment>
@@ -37,10 +37,10 @@ export default function Skills() {
       const cardAdaptability = (
         <React.Fragment>
           <CardContent id="card-content-adapt" sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', flexDirection: 'column', paddingTop: '90px', paddingBottom: '100px' }}>
-            <Typography variant="h5" component="div" sx={{ mb: 1.5, textAlign: 'center', color: 'rgba(255, 255, 255, 0.6)' }}> 
+            <Typography variant="h6" component="div" sx={{ mb: 1.5, textAlign: 'center', color: 'rgba(255, 255, 255, 0.6)' }}> 
               Adaptability
             </Typography>
-            <PublishedWithChangesIcon sx={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '5rem' }}/>
+            <PublishedWithChangesIcon sx={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '4rem' }}/>
           </CardContent>
         </React.Fragment>
       );

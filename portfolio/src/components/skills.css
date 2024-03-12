@@ -25,13 +25,6 @@
     color: #33FF00;
 }
 
-/* .skill-element {
-    width: 300px;
-    max-width: 300px;
-    border: 1px solid white;
-    border-radius: 20px;
-} */
-
 .skills-cards {
     display: flex;
     justify-content: space-between;
@@ -40,17 +33,20 @@
 }
 
 .MuiCardContent-root > div {
-    transition: ease-in 0.5s;
+    transition: ease-in 0.4s;
 }
 
 .MuiCardContent-root > svg {
-    transition: ease-in 0.5s;
+    transition: ease-in 0.4s;
 }
 
 .MuiCardContent-root:hover > div  {
+    font-size: 130%;
     color: #33FF00;
 }
 
 .MuiCardContent-root:hover > svg {
     color: #33FF00;
+    font-size: 4.5rem;
 }
+

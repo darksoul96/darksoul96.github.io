@@ -45,6 +45,18 @@
   align-items: center;
 }
 
+#nav-page-technologies {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#nav-page-contact {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 .current-nav {
   transform: rotate(45deg);
   background-color: #33FF00;

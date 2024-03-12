@@ -1,0 +1,16 @@
+.technologies {
+    width: 1152px;
+    height: 600px;
+    min-height: 600px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.technologies > h1 {
+    text-align: center;
+    color: #33FF00;
+}
+
+.logo-element {
+    width: 100px;
+    height: 100px;
+}
