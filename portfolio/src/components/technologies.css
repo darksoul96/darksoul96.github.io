@@ -11,6 +11,22 @@
 }
 
 .logo-element {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+}
+
+.technologies-carousel {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carousel-element {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
