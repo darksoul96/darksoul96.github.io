@@ -1,14 +1,10 @@
 .about{
-    /* padding: 50px;
-    border: 2px solid;
-    border-color: rgba(0, 0, 0, 1);
-    border-radius: 20px; */
-    width: 1152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 600px;
     min-height: 600px;
     font-family: "Source Code Pro", monospace;
-    /* box-shadow: 5px 5px 15px;
-    background-color: #0d0d0d; */
 }
 
 .about > h1 {
@@ -20,9 +16,13 @@
     padding-left: 23px;
     padding-right: 23px;
     text-align: justify;
+    width: 70%;
 }
 
 #resume-link {
+    float: right;
+    margin-right: 20%;
+    margin-left: auto;
     text-decoration: none;
     float: right;
     color: #33FF00;
@@ -32,4 +32,65 @@
 #resume-link:hover {
     text-decoration: underline;
     color: #33ff00ab;
+}
+
+
+@media screen and (max-width: 900px) {
+    .about > p {
+        font-size: 0.9rem;
+        width: 60%;
+    } 
+}
+
+@media screen and (max-width: 730px) {
+    .about > p {
+        font-size: 0.85rem;
+        width: 55%;
+    } 
+    #resume-link {
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .about > p {
+        font-size: 0.8rem;
+        width: 45%;
+    } 
+    #resume-link {
+        margin-right: 25%;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .about > p {
+        font-size: 0.8rem;
+        width: 40%;
+    } 
+    #resume-link {
+        margin-right:30%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .about > p {
+        font-size: 0.7rem;
+        width: 32%;
+    } 
+    #resume-link {
+        margin-right:35%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .about > p {
+        font-size: 0.7rem;
+        width: 28%;
+    } 
+    #resume-link {
+        margin-right:38%;
+    }
 }

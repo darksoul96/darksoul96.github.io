@@ -1,23 +1,8 @@
 .skills {
-    /*display: grid;
-    padding: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-     border: 2px solid;
-    border-color: rgba(0, 0, 0, 1); 
-    border-radius: 20px;
     width: 60vw;
-    height: 60vh;
-    min-height: 600px;
-    font-family: "Source Code Pro", monospace;
-     box-shadow: 5px 5px 15px; 
-    background-color: #0d0d0d;*/
-    width: 1152px;
     height: 600px;
     min-height: 600px;
     font-family: "Source Code Pro", monospace;
-    
-    
 }
 
 .skills > h1 {
@@ -30,6 +15,8 @@
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.06);
     padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .MuiCardContent-root > div {
@@ -48,5 +35,44 @@
 .MuiCardContent-root:hover > svg {
     color: #33FF00;
     font-size: 4.1rem;
+}
+
+#skills-cards-small > .MuiPaper-root > .MuiCardContent-root > .MuiTypography-root {
+    font-size: 1.5rem;
+}
+
+#skills-cards-small {
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width: 1000px) {
+    #skills-cards-small {
+        display: flex;
+    }
+
+    .skill-box {
+        display: none !important;
+    }
+
+    .skills-cards {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #skills-cards-small > .MuiPaper-root > .MuiCardContent-root > .MuiTypography-root {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #skills-cards-small {
+        flex-direction: column;
+    }
+    #skills-cards-small > .MuiPaper-root > .MuiCardContent-root {
+        padding: 30px !important;
+    }
 }
 

@@ -24,7 +24,7 @@ export default function Technologies() {
         autoplay: true,
         autoplaySpeed: 500,
         cssEase: "linear",
-        pauseOnHover: true,
+        pauseOnHover: false,
         nextArrow: <></>,
         prevArrow: <></>
       };

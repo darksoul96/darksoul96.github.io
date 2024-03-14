@@ -18,6 +18,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    width: 80vw;
 }
 
 #hero-text > h1::after {
@@ -39,5 +40,37 @@
 
     to {
         opacity: 0%;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .welcome{
+        margin-right: 150px;
+    }
+    #hero-text{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #hero-text{
+        font-size: 3rem;
+        padding-left: 50px;
+    }  
+}
+
+
+@media screen and (max-width: 460px) {
+    #hero-text{
+        font-size: 2.5rem;
+    }  
+}
+
+@media screen and (max-width: 400px) {
+    .welcome{
+        margin-right: 150px;
     }
 }

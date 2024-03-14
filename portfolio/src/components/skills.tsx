@@ -49,15 +49,21 @@ export default function Skills() {
         <section className="skills">
             <h1>Soft skills</h1><br />
             <div className="skills-cards">
-                <Box sx={{ width: 350, height: 350, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Box className="skill-box" sx={{ width: '30%', height: 350, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Card sx={{ width: 300, height: 300, backgroundColor: '#12121280' }} variant="outlined">{cardProblemSolving}</Card>
                 </Box>
-                <Box sx={{ width: 350, height: 350, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <Box className="skill-box" sx={{ width: '30%', height: 350, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Card sx={{ width: 300, height: 300, backgroundColor: '#12121280' }} variant="outlined">{cardTeamwork}</Card>
                 </Box>
-                <Box sx={{ width: 350, height: 350, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <Box className="skill-box" sx={{ width: '30%', height: 350, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Card sx={{ width: 300, height: 300, backgroundColor: '#12121280' }} variant="outlined">{cardAdaptability}</Card>
                 </Box>
+            </div>
+
+            <div hidden id="skills-cards-small">
+            <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardProblemSolving}</Card>
+              <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardTeamwork}</Card>
+              <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardAdaptability}</Card>
             </div>
             
             
