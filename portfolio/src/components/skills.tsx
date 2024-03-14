@@ -60,8 +60,8 @@ export default function Skills() {
                 </Box>
             </div>
 
-            <div hidden id="skills-cards-small">
-            <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardProblemSolving}</Card>
+            <div id="skills-cards-small">
+              <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardProblemSolving}</Card>
               <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardTeamwork}</Card>
               <Card sx={{ backgroundColor: 'transparent', borderColor: 'transparent' }} variant="outlined">{cardAdaptability}</Card>
             </div>

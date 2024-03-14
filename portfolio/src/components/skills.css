@@ -42,14 +42,13 @@
 }
 
 #skills-cards-small {
-    display: flex;
-    justify-content: center;
-    
+    display: none; 
 }
 
 @media screen and (max-width: 1000px) {
     #skills-cards-small {
         display: flex;
+        justify-content: center;
     }
 
     .skill-box {
