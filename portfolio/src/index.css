@@ -27,3 +27,8 @@
 
 }
 
+@media screen and (max-width: 500px)  {
+  :root {
+    overflow: scroll !important;
+  }
+}
