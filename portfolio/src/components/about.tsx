@@ -15,13 +15,13 @@ experience in various engineering projects. <br /><br />
 I had the privilege of developing and mantaining a project called MyCareReports owned
 by the Cancer Support Community. <br /><br />
 Furthermore, I have actively maintained my personal repository, where I have undertaken
-several projects showcasing my skills in software engineering, including web and mobile applications utilizing frameworks such
-as React, Angular, and Flutter, as well as desktop applications developed in C++. <br /><br />
+several projects showcasing my skills in software engineering, including web, mobile and desktop applications. <br /><br />
 This diverse experience has strengthened my
-problem-solving abilities and my commitment to delivering innovative solutions.
+problem-solving abilities and my commitment to delivering innovative solutions. <br/>
+Oh, and by the way I'm also a big C++ enthusiast.
             </p>
             <br />
-            <a id="resume-link" href="https://1drv.ms/b/s!Asw_2YTjYXyQi9U78-5O4vo8tajxJw?e=VZvNaI" target="_blank">My resume</a>
+            <a id="resume-link" href="https://1drv.ms/b/s!Asw_2YTjYXyQi9YjkcFvCnJb6ibvVQ?e=DphxDM" target="_blank">My resume</a>
         </section>
     )
 }
